@@ -14,7 +14,7 @@ pet = {
     'weight': 2,
     'eats': 'seeds',
 }
-pets.append(pet)
+pets.append(pets)
 
 pet = {
     'animal type': 'dog',
@@ -23,7 +23,7 @@ pet = {
     'weight': 37,
     'eats': 'shoes',
 }
-pets.append(pet)
+pets.append(pets)
 
 
 for pet in pets:

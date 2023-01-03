@@ -1,4 +1,10 @@
-favorite_transportation = ['car', "airplane"]
-print(favorite_transportation)
-print(" I would like to own a Honda motorcycle{}".format(favorite_transportation[0]))
-print("I travel overseas using {}".format(favorite_transportation[1]))
+guests = ['khan', 'saad', 'arham']
+
+name = guests[0].title()
+print(name + ", please come to dinner.")
+
+name = guests[1].title()
+print(name + ", please come to dinner.")
+
+name = guests[2].title()
+print(name + ", please come to dinner.")
