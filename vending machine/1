@@ -1,0 +1,55 @@
+def display_menu():
+    print("welcome to vending machine.")
+    print("please select one option")
+    print("1.display availible item")
+    print("2.purchase an item")
+    print("3.exit")
+    
+def display_item():
+    print("here are the availible item")
+    print("1.pepsi-4$")
+    print("2.cake-5$")
+    print("3.coffe-2$")
+    print("4.icecream-6$")
+    print("5.water-1$")
+    print("6.tea-1$")
+    
+def purchase_item(balance):
+    item=input("enter the iteam nuber if u want to buy")
+    if item=="1":
+        cost=4
+        item_name="pepsi"
+    elif item=="2":
+        cost=5
+        item_name="cake"
+    elif item=="3":
+        cost=2
+        item_name="coffe"
+    elif item=="4":
+        cost=6
+        item_name="icecream"
+    elif item=="5":
+        cost=1
+        item_name="water"
+    elif item=="6":
+        cost=1
+        item_name="tea"
+    else:
+        print("invalid item number")
+def vending_machine():
+  balance = 0
+  while True:
+    display_menu()
+    option = input("Enter option number: ")
+    if option == "1":
+      display_items()
+    elif option == "2":
+      balance = purchase_item(balance)
+    elif option == "3":
+      print("Thank you for using the vending machine. Your balance is $" + str(balance) + ".")
+      break
+    else:
+      print("Invalid option. Please try again.")
+      continue
+
+vending_machine()   
